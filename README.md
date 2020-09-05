@@ -17,6 +17,17 @@ A little python script to check if a 3ds max file is compatible with Homestyler
 # results
 
 ````
+Analyzing: 3d-model.max
+File is not interlaced
+Objects: 10
+Vertices: 5904
+Faces: 11392
+Textures expected: 1
+ - vegetation_grass1.jpg
+Renderer: Default Scanline Renderer
+3ds max Version: 2016
+Save version: 2013
+deleting temp files in tmp/4db440f5-7b40-4bf9-9d8b-651b00ffca6d/
 ----------------------------------------------------------------
 Analyzing: Decorative_panel_corona_max_2014.max
 File is not interlaced
