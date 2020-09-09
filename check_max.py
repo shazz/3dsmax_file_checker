@@ -186,7 +186,13 @@ def decompound_file(filename):
     else:
         converted = getFileVersion(filename)
 
-    print(f"Renderer: {renderer}")
+    if "corona" in renderer.lower():
+        print(f"Renderer: {Fore.YELLOW}{renderer}{Fore.WHITE}")
+    elif "v-ray" in renderer.lower():
+        print(f"Renderer: {Fore.GREEN}{renderer}{Fore.WHITE}")
+    else:
+        print(f"Renderer: {renderer}")
+
     print(f"3ds max Version: {max_converted}")
 
     if converted is not None:
