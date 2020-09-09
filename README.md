@@ -26,6 +26,7 @@ A little python script to check if a 3ds max file is compatible with Homestyler
  
  The scritp doesn't check:
  - That all the expected textures files exist somewhere on the disk
+ - That the model size doesn't exceed 20x20x20m
 
 # results
 
