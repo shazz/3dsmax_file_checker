@@ -15,6 +15,18 @@ A little python script to check if a 3ds max file is compatible with Homestyler
  1. Copy your `.max` files in this `tobeanalyzed` folder
  1. Run the script: `python check_max.py`
 
+# notes
+
+ The script checks the following criteria:
+ 
+ - The max file is readable (both version, normal and interleaved)
+ - The number of faces is smaller than 800K
+ - The 3ds max save version is < 2017
+ - The renderer used. Corona is partially supported by Homestyler but textures won't show up.
+ 
+ The scritp doesn't check:
+ - That all the expected textures files exist somewhere on the disk
+
 # results
 
 ````
