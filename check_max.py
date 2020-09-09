@@ -151,7 +151,11 @@ def decompound_file(filename):
 
     print(f"Objects: {objects}")
     print(f"Vertices: {vertices}")
-    print(f"Faces: {faces}")
+
+    if int(faces) >= 800000:
+        print(f"Faces: {Fore.RED}{faces}{Fore.WHITE}")
+    else:
+        print(f"Faces: {Fore.GREEN}{faces}{Fore.WHITE}")
 
     # find textures
     for texture_ext in textures_ext:
@@ -184,8 +188,12 @@ def decompound_file(filename):
 
     print(f"Renderer: {renderer}")
     print(f"3ds max Version: {max_converted}")
-    color = Fore.GREEN if converted < 2018 else Fore.RED
-    print(f"Save version: {color}{converted}{Fore.WHITE}")
+
+    if converted is not None:
+        color = Fore.GREEN if converted < 2018 else Fore.RED
+        print(f"Save version: {color}{converted}{Fore.WHITE}")
+    else:
+        print(f"Save version: {Fore.YELLOW}UNKNOWN{Fore.WHITE}")
 
     print("deleting temp files in {}".format(tmp))
     shutil.rmtree(tmp, ignore_errors=True)
