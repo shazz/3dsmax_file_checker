@@ -19,16 +19,19 @@ A little python script to check if a 3ds max file is compatible with Homestyler
 
  The script checks the following criteria:
  
- - The max file is readable (both version, normal and interleaved)
- - The number of faces is smaller than 800K
- - The 3ds max save version is < 2017
- - The renderer used. Corona is partially supported by Homestyler but textures won't show up.
+ - The max file can be depacked (both version, normal and interleaved)
+ - The number of faces is smaller than **800K**
+ - The 3ds max save version is < **2017**
+ - The renderer used:
+   - **V-Ray** is officialy supported.
+   - **Corona** is partially supported by Homestyler but textures won't show up.
+   - Other renderers may (NVIDIA mental ray, finalRender, Default Scanline, Mental Ray...) be supported (unknown)
  
- The scritp doesn't check:
+ The script doesn't check (yet at least):
  - That all the expected textures files exist somewhere on the disk
- - That the model size doesn't exceed 20x20x20m
+ - That the model size doesn't exceed **20x20x20m**
 
-# results
+# results example
 
 ````
 Analyzing: 3d-model.max
