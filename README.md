@@ -3,7 +3,7 @@ A little python script to check if a 3ds max file is compatible with Homestyler
 
 # requirements
 
- - python 3+
+ - python 3+ with pip
  - `7z.exe` from 7-zip (CLI from https://www.7-zip.org/ package)
  - pip install colorama
 
